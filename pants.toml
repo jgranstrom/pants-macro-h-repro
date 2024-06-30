@@ -1,0 +1,13 @@
+[GLOBAL]
+backend_packages = [
+    "pants.backend.experimental.java",
+    "pants.backend.experimental.scala",
+]
+pants_version = "2.20.0"
+print_stacktrace = true
+
+[jvm]
+reproducible_jars = true
+
+[scala]
+version_for_resolve = { "jvm-default" = "2.13.12" }
